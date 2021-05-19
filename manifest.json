@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "ILIAS Opencast DL",
+  "version": "1.0.1",
+  "description": "Adda direct download link to any ILIAS Opencast pages",
+  "icons": {},
+
+  "background": {
+    "scripts": []
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://ilias.studium.kit.edu/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "applications": {
+    "gecko": {
+      "update_url": "https://pages.foxat.de/browser-addons-repository/updates.json"
+    }
+  }
+}
